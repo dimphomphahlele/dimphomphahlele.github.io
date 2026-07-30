@@ -16,55 +16,204 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f4f7fc;
-            color: #1a1a2e;
+            background: #f8f7ff; /* Very light lavender */
+            color: #2a1f4d; /* Dark purple */
             transition: background 0.6s ease, color 0.6s ease;
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
         body.dark-mode {
-            background: #0f0f1a;
-            color: #e0e0e0;
+            background: #0d0121; /* Very dark purple */
+            color: #dcd7ff; /* Light lavender */
         }
 
         body.dark-mode .navbar {
-            background: #1a1a2e;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            background: #1e1236; /* Slightly lighter dark purple */
+            box-shadow: 0 2px 10px rgba(126, 34, 206, 0.5); /* Glowing purple */
+            border-bottom: 1px solid rgba(126, 34, 206, 0.2);
+        }
+
+        body.dark-mode .logo {
+            color: #9333ea; /* Main robotic futuristic purple */
+            text-shadow: 0 0 10px rgba(126, 34, 206, 0.8);
+        }
+
+        body.dark-mode .nav-links a {
+            color: #dcd7ff;
+        }
+
+        body.dark-mode .nav-links a:hover {
+            color: #9333ea;
+            text-shadow: 0 0 15px rgba(126, 34, 206, 1);
         }
 
         body.dark-mode .toggle-btn {
-            background: #2d2d44;
-            color: #ffd700;
+            background: rgba(126, 34, 206, 0.2);
+            color: #dcd7ff;
+            border: 1px solid rgba(126, 34, 206, 0.5);
+            box-shadow: 0 0 10px rgba(126, 34, 206, 0.5);
+        }
+
+        body.dark-mode .toggle-btn:hover {
+            background: rgba(126, 34, 206, 0.4);
+            box-shadow: 0 0 20px rgba(126, 34, 206, 1);
+        }
+
+        body.dark-mode .hero h1 {
+            color: #dcd7ff;
+            text-shadow: 0 0 10px rgba(220, 215, 255, 0.5);
+        }
+
+        body.dark-mode .hero .tagline {
+            color: #9333ea;
+            text-shadow: 0 0 15px rgba(126, 34, 206, 1);
+        }
+
+        body.dark-mode .btn-primary {
+            background: linear-gradient(135deg, #7e22ce, #a855f7); /* Vibrant purple gradient */
+            box-shadow: 0 0 20px rgba(126, 34, 206, 0.8);
+        }
+
+        body.dark-mode .btn-primary:hover {
+            box-shadow: 0 0 35px rgba(126, 34, 206, 1);
+        }
+
+        body.dark-mode .btn-outline {
+            color: #9333ea;
+            border: 2px solid #9333ea;
+            box-shadow: 0 0 15px rgba(126, 34, 206, 0.5);
+        }
+
+        body.dark-mode .btn-outline:hover {
+            background: #9333ea;
+            color: #0d0121;
+            box-shadow: 0 0 25px rgba(126, 34, 206, 1);
+        }
+
+        body.dark-mode .section-title {
+            color: #dcd7ff;
+            text-shadow: 0 0 15px rgba(220, 215, 255, 0.5);
+        }
+
+        body.dark-mode .section-title::after {
+            background: #9333ea;
+            box-shadow: 0 0 10px rgba(126, 34, 206, 1);
         }
 
         body.dark-mode .skill-card {
-            background: #1a1a2e;
-            border-color: #333;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+            background: #1e1236;
+            border-color: rgba(126, 34, 206, 0.4);
+            box-shadow: 0 8px 25px rgba(126, 34, 206, 0.4);
         }
 
         body.dark-mode .skill-card h3 {
-            color: #88d0ff;
+            color: #dcd7ff;
+        }
+
+        body.dark-mode .skill-card .card-icon {
+            color: #9333ea;
+            text-shadow: 0 0 10px rgba(126, 34, 206, 1);
         }
 
         body.dark-mode .skill-badge {
-            background: #2d2d44;
-            border-color: #444;
-            color: #e0e0e0;
+            background: rgba(126, 34, 206, 0.15);
+            border-color: rgba(126, 34, 206, 0.5);
+            color: #dcd7ff;
+        }
+
+        body.dark-mode .skill-badge:hover {
+            background: rgba(126, 34, 206, 0.3);
+            border-color: #9333ea;
+            box-shadow: 0 0 10px rgba(126, 34, 206, 1);
+        }
+
+        body.dark-mode .projects-header h1 {
+            color: #9333ea;
+            text-shadow: 0 0 30px rgba(126, 34, 206, 1);
+        }
+
+        body.dark-mode .project-sub-header h2 {
+            color: #dcd7ff;
+            text-shadow: 0 0 15px rgba(220, 215, 255, 0.5);
         }
 
         body.dark-mode .card {
-            background: #1a1a2e;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            background: #1e1236;
+            border-color: rgba(126, 34, 206, 0.4);
+            border-left: 5px solid #9333ea;
+            box-shadow: 0 10px 30px rgba(126, 34, 206, 0.4);
+        }
+
+        body.dark-mode .card h3 {
+            color: #dcd7ff;
+        }
+
+        body.dark-mode .card .tech-tag {
+            background: rgba(126, 34, 206, 0.2);
+            color: #dcd7ff;
+            border: 1px solid rgba(126, 34, 206, 0.5);
+        }
+
+        body.dark-mode .card .tech-tag:hover {
+            background: rgba(126, 34, 206, 0.4);
+            border-color: #9333ea;
+            box-shadow: 0 0 10px rgba(126, 34, 206, 1);
+        }
+
+        body.dark-mode .card .grade {
+            color: #a78bfa; /* Slightly lighter purple */
+            text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+        }
+
+        body.dark-mode .card .github-link {
+            color: #a78bfa;
+        }
+
+        body.dark-mode .card .github-link:hover {
+            color: #dcd7ff;
+            text-shadow: 0 0 15px rgba(220, 215, 255, 1);
         }
 
         body.dark-mode .achievement-card {
-            background: #1a1a2e;
-            border-left: 5px solid #ffd700;
+            background: #1e1236;
+            border-left: 5px solid #facc15; /* Re-retaining original golden/yellow */
+            box-shadow: 0 10px 30px rgba(250, 204, 21, 0.3); /* Golden glow */
+            border-top-color: rgba(250, 204, 21, 0.1);
+            border-right-color: rgba(250, 204, 21, 0.1);
+            border-bottom-color: rgba(250, 204, 21, 0.1);
+        }
+
+        body.dark-mode .achievement-card:hover {
+            box-shadow: 0 20px 50px rgba(250, 204, 21, 0.6); /* Vibrant golden glow */
+        }
+
+        body.dark-mode .achievement-card .hack-tag {
+            background: #facc15;
+            color: #0d0121;
+            box-shadow: 0 0 15px rgba(250, 204, 21, 0.8);
+        }
+
+        body.dark-mode .achievement-card h3 {
+            color: #dcd7ff;
+        }
+
+        body.dark-mode .achievement-card .sub {
+            color: #a3a3a3; /* Light grey sub */
+        }
+
+        body.dark-mode .contact-info a {
+            color: #dcd7ff;
+        }
+
+        body.dark-mode .contact-info a:hover {
+            color: #9333ea;
+            text-shadow: 0 0 15px rgba(126, 34, 206, 1);
         }
 
         body.dark-mode .footer {
-            border-top-color: #333;
+            border-top-color: rgba(126, 34, 206, 0.3);
+            color: #a3a3a3;
         }
 
         .container {
@@ -81,7 +230,7 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-            transition: background 0.6s ease, box-shadow 0.6s ease;
+            transition: background 0.6s ease, box-shadow 0.6s ease, border-bottom 0.6s ease;
         }
 
         .nav-flex {
@@ -93,7 +242,8 @@
         .logo {
             font-size: 1.5rem;
             font-weight: 700;
-            color: #0077b5;
+            color: #7e22ce;
+            transition: color 0.6s ease, text-shadow 0.6s ease;
         }
 
         .nav-links a {
@@ -101,11 +251,11 @@
             text-decoration: none;
             color: inherit;
             font-weight: 500;
-            transition: color 0.3s;
+            transition: color 0.3s, text-shadow 0.3s;
         }
 
         .nav-links a:hover {
-            color: #0077b5;
+            color: #7e22ce;
         }
 
         .toggle-btn {
@@ -116,7 +266,7 @@
             cursor: pointer;
             font-size: 1rem;
             font-weight: bold;
-            transition: background 0.4s ease, color 0.4s ease, transform 0.2s;
+            transition: background 0.4s ease, color 0.4s ease, transform 0.2s, box-shadow 0.4s ease, border 0.4s ease;
         }
 
         .toggle-btn:hover {
@@ -128,6 +278,29 @@
             text-align: center;
             padding: 60px 0 40px;
             animation: fadeInUp 1s ease;
+            position: relative; /* Container for bg animation */
+        }
+
+        /* Robotic background animation placeholder */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image:
+                linear-gradient(rgba(126, 34, 206, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(126, 34, 206, 0.05) 1px, transparent 1px);
+            background-size: 20px 20px;
+            background-position: center;
+            opacity: 0.5;
+            z-index: -1;
+            transition: opacity 0.6s ease;
+        }
+
+        body.dark-mode .hero::before {
+            opacity: 0.8;
+            background-image:
+                linear-gradient(rgba(126, 34, 206, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(126, 34, 206, 0.1) 1px, transparent 1px);
         }
 
         .profile-img {
@@ -135,22 +308,28 @@
             height: 180px;
             border-radius: 50%;
             object-fit: cover;
-            border: 6px solid #0077b5;
-            box-shadow: 0 10px 30px rgba(0, 119, 181, 0.3);
+            border: 6px solid #7e22ce;
+            box-shadow: 0 10px 30px rgba(126, 34, 206, 0.3);
             margin-bottom: 20px;
-            transition: box-shadow 0.6s ease;
+            transition: box-shadow 0.6s ease, border-color 0.6s ease, transform 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05) rotate(5deg);
+            box-shadow: 0 15px 40px rgba(126, 34, 206, 0.6);
         }
 
         .hero h1 {
             font-size: 2.8rem;
             margin-bottom: 5px;
+            transition: color 0.6s ease, text-shadow 0.6s ease;
         }
 
-        /* UPDATED TAGLINE WITH "ASPIRING" */
         .hero .tagline {
             font-size: 1.3rem;
-            color: #0077b5;
+            color: #7e22ce;
             font-weight: 600;
+            transition: color 0.6s ease, text-shadow 0.6s ease;
         }
 
         .btn-group {
@@ -164,30 +343,32 @@
             text-decoration: none;
             font-weight: 600;
             margin: 0 8px;
-            transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.4s ease;
+            transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.4s ease, color 0.4s ease, border 0.4s ease;
             border: none;
             cursor: pointer;
         }
 
         .btn-primary {
-            background: #0077b5;
+            background: #7e22ce;
             color: white;
+            transition: all 0.4s ease;
         }
 
         .btn-primary:hover {
-            background: #005582;
+            background: #6b21a8;
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 119, 181, 0.3);
+            box-shadow: 0 10px 20px rgba(126, 34, 206, 0.3);
         }
 
         .btn-outline {
             background: transparent;
-            color: #0077b5;
-            border: 2px solid #0077b5;
+            color: #7e22ce;
+            border: 2px solid #7e22ce;
+            transition: all 0.4s ease;
         }
 
         .btn-outline:hover {
-            background: #0077b5;
+            background: #7e22ce;
             color: white;
         }
 
@@ -201,6 +382,7 @@
             margin-bottom: 40px;
             position: relative;
             display: inline-block;
+            transition: color 0.6s ease, text-shadow 0.6s ease;
         }
 
         .section-title::after {
@@ -210,8 +392,9 @@
             bottom: -8px;
             width: 50px;
             height: 4px;
-            background: #0077b5;
+            background: #7e22ce;
             border-radius: 2px;
+            transition: background 0.6s ease, box-shadow 0.6s ease;
         }
 
         .text-center {
@@ -238,18 +421,15 @@
 
         .skill-card:hover {
             transform: translateY(-6px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border-color: rgba(126, 34, 206, 0.6);
+            box-shadow: 0 15px 35px rgba(126, 34, 206, 0.4);
         }
 
         .skill-card .card-icon {
             font-size: 2.2rem;
-            color: #0077b5;
+            color: #7e22ce;
             margin-bottom: 12px;
-            transition: color 0.6s ease;
-        }
-
-        body.dark-mode .skill-card .card-icon {
-            color: #88d0ff;
+            transition: color 0.6s ease, text-shadow 0.6s ease;
         }
 
         .skill-card h3 {
@@ -272,19 +452,64 @@
             border-radius: 30px;
             font-weight: 600;
             font-size: 0.85rem;
-            transition: background 0.6s ease, border-color 0.6s ease, color 0.6s ease, transform 0.2s;
+            transition: background 0.6s ease, border-color 0.6s ease, color 0.6s ease, transform 0.2s, box-shadow 0.6s ease;
             border: 1px solid transparent;
         }
 
         .skill-badge:hover {
             transform: scale(1.05);
+            background: rgba(126, 34, 206, 0.1);
+            border-color: rgba(126, 34, 206, 0.4);
+            color: #7e22ce;
         }
 
-        /* ---------- PROJECTS ---------- */
+        /* ---------- PROJECTS SECTION RESTRUCTURING ---------- */
+        .projects-section-container {
+            display: block; /* Default container flow */
+        }
+
+        .projects-header {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .projects-header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #7e22ce;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: color 0.6s ease, text-shadow 0.6s ease;
+        }
+
+        .project-sub-header {
+            margin-top: 50px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .project-sub-header h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            position: relative;
+            display: inline-block;
+            transition: color 0.6s ease, text-shadow 0.6s ease;
+        }
+
+        .projects-personal, .projects-academic {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Grid for cards, centered inside subsections */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 30px;
+            max-width: 1000px;
+            width: 100%;
         }
 
         .card {
@@ -292,19 +517,27 @@
             padding: 25px;
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            transition: background 0.6s ease, box-shadow 0.6s ease, transform 0.3s ease;
-            border-left: 5px solid #0077b5;
+            transition: background 0.6s ease, box-shadow 0.6s ease, transform 0.3s ease, border 0.6s ease;
+            border-left: 5px solid #7e22ce;
             display: flex;
             flex-direction: column;
+            border: 1px solid transparent; /* Placeholder for hover */
         }
 
         .card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 50px rgba(126, 34, 206, 0.4);
+            border-color: rgba(126, 34, 206, 0.6);
         }
 
         .card h3 {
             font-size: 1.4rem;
             margin-bottom: 8px;
+            transition: color 0.6s ease;
+        }
+
+        .card p {
+            transition: color 0.6s ease;
         }
 
         .card .tech-tag {
@@ -314,32 +547,34 @@
             border-radius: 20px;
             font-size: 0.8rem;
             font-weight: 600;
-            color: #0077b5;
+            color: #7e22ce;
             margin: 5px 5px 5px 0;
-            transition: background 0.6s ease, color 0.6s ease;
-        }
-
-        body.dark-mode .card .tech-tag {
-            background: #2d2d44;
-            color: #88d0ff;
+            transition: background 0.6s ease, color 0.6s ease, border 0.6s ease, box-shadow 0.6s ease;
+            border: 1px solid transparent;
         }
 
         .card .grade {
             font-weight: 700;
-            color: #28a745;
+            color: #28a745; /* Re-retaining original green */
             font-size: 1.1rem;
             margin-top: 10px;
             display: block;
+            transition: color 0.6s ease, text-shadow 0.6s ease;
         }
 
         .card .github-link {
             margin-top: 15px;
             display: inline-block;
-            color: #0077b5;
+            color: #7e22ce;
             font-weight: 600;
             text-decoration: none;
             align-self: flex-start;
-            transition: color 0.3s;
+            transition: color 0.3s, transform 0.3s, text-shadow 0.3s;
+        }
+
+        .card .github-link:hover {
+            text-shadow: 0 0 10px rgba(126, 34, 206, 0.8);
+            transform: translateX(3px);
         }
 
         .card .github-link i {
@@ -352,15 +587,17 @@
             padding: 25px 30px;
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            border-left: 5px solid #ffd700;
-            transition: background 0.6s ease, box-shadow 0.6s ease, transform 0.3s ease;
+            border-left: 5px solid #ffd700; /* Original golden */
+            transition: background 0.6s ease, box-shadow 0.6s ease, transform 0.3s ease, border 0.6s ease;
             max-width: 700px;
             margin: 0 auto;
+            border: 1px solid transparent; /* Placeholder for hover */
         }
 
         .achievement-card:hover {
-            transform: scale(1.01);
-            box-shadow: 0 15px 35px rgba(255, 215, 0, 0.2);
+            transform: scale(1.02);
+            box-shadow: 0 15px 35px rgba(255, 215, 0, 0.4);
+            border-color: rgba(255, 215, 0, 0.6);
         }
 
         .achievement-card .hack-tag {
@@ -373,11 +610,13 @@
             font-weight: 800;
             letter-spacing: 0.5px;
             margin-bottom: 10px;
+            transition: background 0.6s ease, color 0.6s ease, box-shadow 0.6s ease;
         }
 
         .achievement-card h3 {
             font-size: 1.5rem;
             margin-bottom: 5px;
+            transition: color 0.6s ease;
         }
 
         .achievement-card .sub {
@@ -387,14 +626,19 @@
             transition: color 0.6s ease;
         }
 
-        body.dark-mode .achievement-card .sub {
-            color: #aaa;
+        .achievement-card p {
+            transition: color 0.6s ease;
         }
 
         .achievement-card .github-link {
             color: #b8960f;
             font-weight: 600;
             text-decoration: none;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        .achievement-card .github-link:hover {
+            text-shadow: 0 0 10px rgba(250, 204, 21, 0.8);
         }
 
         .achievement-card .github-link i {
@@ -413,12 +657,21 @@
         .contact-info a {
             color: inherit;
             text-decoration: none;
-            transition: color 0.3s, transform 0.3s;
+            transition: color 0.3s, transform 0.3s, text-shadow 0.3s;
         }
 
         .contact-info a:hover {
-            color: #0077b5;
+            color: #7e22ce;
             transform: scale(1.1);
+        }
+
+        .contact-info a:hover i {
+            animation: roboticPulse 1s infinite alternate;
+        }
+
+        @keyframes roboticPulse {
+            0% { text-shadow: 0 0 5px rgba(126, 34, 206, 0.5); }
+            100% { text-shadow: 0 0 15px rgba(126, 34, 206, 1); }
         }
 
         /* ---------- FOOTER ---------- */
@@ -427,7 +680,7 @@
             padding: 30px 0;
             border-top: 1px solid #ddd;
             margin-top: 20px;
-            transition: border-color 0.6s ease;
+            transition: border-color 0.6s ease, color 0.6s ease;
         }
 
         /* ---------- ANIMATIONS ---------- */
@@ -437,7 +690,6 @@
         }
 
         /* ---------- RESPONSIVE ---------- */
-        /* ONLY stack on phones (max-width 700px) */
         @media (max-width: 700px) {
             .skills-grid-3 {
                 grid-template-columns: 1fr;
@@ -447,12 +699,13 @@
             .nav-flex { flex-wrap: wrap; gap: 10px; justify-content: center; }
             .nav-links a { margin: 0 12px; font-size: 0.9rem; }
             .hero h1 { font-size: 2rem; }
+            .projects-header h1 { font-size: 2.2rem; }
+            .project-sub-header h2 { font-size: 1.5rem; }
             .btn { display: block; margin: 10px auto; width: 80%; }
             .contact-info { flex-direction: column; align-items: center; gap: 15px; }
             .projects-grid { grid-template-columns: 1fr; }
         }
 
-        /* Keep 3 columns side-by-side on tablets and desktops */
         @media (min-width: 701px) {
             .skills-grid-3 {
                 grid-template-columns: repeat(3, 1fr);
@@ -479,9 +732,8 @@
 
     <!-- ============ HERO ============ -->
     <header class="hero container">
-        <img src="profile.jpg" alt="Dimpho Mphahlele" class="profile-img">
+        <img src="profile.png" alt="Dimpho Mphahlele" class="profile-img">
         <h1>Dimpho Mphahlele</h1>
-        <!-- UPDATED TAGLINE -->
         <p class="tagline">Aspiring Software Developer || Systems Analyst</p>
         <div class="btn-group">
             <a href="Dimpho_Mphahlele_CV.pdf" download class="btn btn-primary">
@@ -494,12 +746,12 @@
     <!-- ============ ABOUT ============ -->
     <section id="about" class="container">
         <h2 class="section-title">About Me</h2>
-        <p style="font-size: 1.1rem; max-width: 800px;">
+        <p style="font-size: 1.1rem; max-width: 800px; color: inherit;">
             I am a motivated BSc Information Technology student at North-West University with practical experience in full-stack web development (ASP.NET), cross-platform mobile development (.NET MAUI), and agile project management. I am eager to leverage my skills in Java, Python, C++, and C# to contribute to dynamic development teams.
         </p>
     </section>
 
-    <!-- ============ SKILLS: 3 CARDS SIDE-BY-SIDE (SPOKEN LANGUAGES REMOVED) ============ -->
+    <!-- ============ SKILLS: 3 CARDS SIDE-BY-SIDE ============ -->
     <section id="skills" class="container">
         <h2 class="section-title">Technical Skills</h2>
 
@@ -507,7 +759,7 @@
 
             <!-- CARD 1 -->
             <div class="skill-card">
-                <div class="card-icon"><i class="fas fa-code"></i></div>
+                <div class="card-icon"><i class="fas fa-microchip"></i></div> <!-- More robotic/tech icon -->
                 <h3>Programming Languages</h3>
                 <div class="skill-badge-group">
                     <span class="skill-badge">Java</span>
@@ -522,7 +774,7 @@
 
             <!-- CARD 2 -->
             <div class="skill-card">
-                <div class="card-icon"><i class="fas fa-tools"></i></div>
+                <div class="card-icon"><i class="fas fa-robot"></i></div> <!-- Robotic/tech icon -->
                 <h3>Frameworks &amp; Tools</h3>
                 <div class="skill-badge-group">
                     <span class="skill-badge">ASP.NET</span>
@@ -537,7 +789,7 @@
 
             <!-- CARD 3 -->
             <div class="skill-card">
-                <div class="card-icon"><i class="fas fa-users-cog"></i></div>
+                <div class="card-icon"><i class="fas fa-satellite-dish"></i></div> <!-- Tech icon -->
                 <h3>Methodologies &amp; Practices</h3>
                 <div class="skill-badge-group">
                     <span class="skill-badge">Agile (Scrum)</span>
@@ -548,51 +800,96 @@
             </div>
 
         </div>
-        <!-- Spoken Languages section REMOVED as requested -->
     </section>
 
-    <!-- ============ PROJECTS ============ -->
+    <!-- ============ PROJECTS RESTRUCTURED ============ -->
     <section id="projects" class="container">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
+        <div class="projects-section-container">
 
-            <div class="card">
-                <h3>NGO Donation Management System</h3>
-                <p>
-                    A full-stack web platform built with <strong>C#</strong>, <strong>ASP.NET</strong>, and <strong>MySQL</strong> 
-                    to digitize NGO donation workflows. Features secure <strong>RESTful APIs</strong>, a responsive 
-                    <strong>HTML/CSS</strong> interface, and optimized SQL queries. Collaborated using 
-                    <strong>Agile/Scrum</strong> and <strong>Git</strong>.
-                </p>
-                <div>
-                    <span class="tech-tag">C#</span>
-                    <span class="tech-tag">ASP.NET</span>
-                    <span class="tech-tag">MySQL</span>
-                    <span class="tech-tag">REST APIs</span>
-                </div>
-                <span class="grade"><i class="fas fa-star" style="color: #ffc107;"></i> Grade: 84%</span>
-                <a href="https://github.com/theArchitect27/Hope-Harvest-database-system" target="_blank" class="github-link">
-                    <i class="fab fa-github"></i> View Code
-                </a>
+            <div class="projects-header">
+                <h1>Projects</h1> <!-- Big letter Projects -->
             </div>
 
-            <div class="card">
-                <h3>MoneyMind – Mobile App</h3>
-                <p>
-                    Cross-platform mobile app built with <strong>C#</strong>, <strong>.NET MAUI</strong>, and <strong>SQLite</strong>. 
-                    Modern <strong>XAML</strong> UI for budgeting, expense tracking, and reporting. Handled backend logic, 
-                    data persistence, and UI/UX testing across Android and iOS.
-                </p>
-                <div>
-                    <span class="tech-tag">C#</span>
-                    <span class="tech-tag">.NET MAUI</span>
-                    <span class="tech-tag">XAML</span>
-                    <span class="tech-tag">SQLite</span>
+            <div class="projects-personal">
+                <div class="project-sub-header">
+                    <h2>Personal Projects</h2>
                 </div>
-                <span class="grade"><i class="fas fa-star" style="color: #ffc107;"></i> Grade: 95%</span>
-                <a href="https://github.com/codeByMahlatse/MoneyMind" target="_blank" class="github-link">
-                    <i class="fab fa-github"></i> View Code
-                </a>
+                <div class="projects-grid">
+                    <!-- PERSONAL PROJECT 1 -->
+                    <div class="card">
+                        <h3>✨ QR Code Generator</h3>
+                        <p>Generates QR codes from text or URL inputs.</p>
+                        <div>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Vite</span>
+                            <span class="tech-tag">Axios</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">QRCode</span>
+                            <span class="tech-tag">Pillow</span>
+                        </div>
+                        <a href="https://github.com/dimphomphahlele/qr-generator-app" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                    <!-- PERSONAL PROJECT 2 -->
+                    <div class="card">
+                        <h3>💰 FinTech Ledger</h3>
+                        <p>Financial transaction platform with idempotency.</p>
+                        <div>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Vite</span>
+                            <span class="tech-tag">Axios</span>
+                            <span class="tech-tag">UUID</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">SQLite</span>
+                        </div>
+                        <a href="https://github.com/dimphomphahlele/fintech-ledger" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-academic">
+                <div class="project-sub-header">
+                    <h2>Academic Projects</h2>
+                </div>
+                <div class="projects-grid">
+                    <!-- ACADEMIC PROJECT 1 (original NGO) -->
+                    <div class="card">
+                        <h3>NGO Donation Management System</h3>
+                        <p>Streamlined NGO workflows with secure APIs, C#, ASP.NET, and MySQL.</p>
+                        <div>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">ASP.NET</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">REST APIs</span>
+                            <span class="tech-tag">Agile/Scrum</span>
+                            <span class="tech-tag">Git</span>
+                        </div>
+                        <span class="grade"><i class="fas fa-star" style="color: #facc15;"></i> Grade: 84%</span> <!-- Re-retaining golden -->
+                        <a href="https://github.com/theArchitect27/Hope-Harvest-database-system" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                    <!-- ACADEMIC PROJECT 2 (original MoneyMind) -->
+                    <div class="card">
+                        <h3>MoneyMind – Mobile App</h3>
+                        <p>Cross-platform budgeting app with a modern UI, C#, .NET MAUI, SQLite.</p>
+                        <div>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">.NET MAUI</span>
+                            <span class="tech-tag">XAML</span>
+                            <span class="tech-tag">SQLite</span>
+                        </div>
+                        <span class="grade"><i class="fas fa-star" style="color: #facc15;"></i> Grade: 95%</span> <!-- Re-retaining golden -->
+                        <a href="https://github.com/codeByMahlatse/MoneyMind" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -605,7 +902,7 @@
             <span class="hack-tag"><i class="fas fa-trophy"></i> 🥈 2nd Place Winner</span>
             <h3>Geekulcha Annual Hackathon 2025</h3>
             <p class="sub">CampusConnect – Digital Campus Hub</p>
-            <p style="max-width: 600px; margin: 10px auto;">
+            <p style="max-width: 600px; margin: 10px auto; color: inherit;">
                 Built in a <strong>10-hour sprint</strong> using <strong>C# ASP.NET</strong> and <strong>Bootstrap</strong>. 
                 Features a marketplace with <strong>SpazaHub</strong>, social discovery, event ticketing, and a tutoring hub. 
                 Secured <strong>2nd Place</strong>.
@@ -639,24 +936,36 @@
             const btn = document.querySelector('.toggle-btn');
             if (document.body.classList.contains('dark-mode')) {
                 btn.innerHTML = '<i class="fas fa-sun"></i> Light';
+                // Trigger reflow for animations if needed but modern browsers handle this well.
+                // Just let the global animation script handle new opacity/transforms.
             } else {
                 btn.innerHTML = '<i class="fas fa-moon"></i> Dark';
             }
         }
 
+        // Global animation script, handles initial fade and hover scale transitions
         document.addEventListener('DOMContentLoaded', function() {
             const elements = document.querySelectorAll('.card, .achievement-card, .skill-card');
             elements.forEach((el, index) => {
                 el.style.opacity = '0';
                 el.style.transform = 'translateY(30px)';
+                // Modern hover effect scale added here with a smooth transition
+                el.style.transition = 'opacity 0.7s ease, transform 0.7s ease, background 0.6s ease, box-shadow 0.6s ease, border-color 0.6s ease';
+                
                 setTimeout(() => {
-                    el.style.transition = 'opacity 0.7s ease, transform 0.7s ease, background 0.6s ease, box-shadow 0.6s ease, border-color 0.6s ease';
                     el.style.opacity = '1';
                     el.style.transform = 'translateY(0)';
                 }, 150 * (index + 1));
+
+                // Add mouseover to enhance scale smoothly
+                el.addEventListener('mouseover', () => {
+                    el.style.transform = 'translateY(-10px) scale(1.02)';
+                });
+                el.addEventListener('mouseout', () => {
+                    el.style.transform = 'translateY(0) scale(1)';
+                });
             });
         });
     </script>
-
 </body>
 </html>
